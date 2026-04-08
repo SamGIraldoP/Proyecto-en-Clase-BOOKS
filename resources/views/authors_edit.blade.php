@@ -9,11 +9,11 @@
 <body>
     <div class="container">
         <div>
-            <form action="{{route('authors.update',$author->id )}}" method="post">
+            <form action="{{route('books.update',$book->id )}}" method="post">
                 @csrf  
                 @method('put')
                 <label for="a1">Ingrese el nombre: </label>
-                <input type="text" name="nombre" id="a1" value="{{$author->name}}">
+                <input type="text" name="nombre" id="a1" value="{{$book->name}}">
                 <br>
                 <button type="submit">Guardar libro</button>
             </form>

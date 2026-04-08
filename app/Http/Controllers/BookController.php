@@ -29,8 +29,8 @@ class BookController extends Controller
     }
 
     public function edit($id){
-        $book = Book::find($id);
-        return view('books_edit', compact('book'));
+        $book = Author::find($id);
+        return view('authors_edit', compact('author'));
 
     }
 
